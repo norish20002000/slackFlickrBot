@@ -40,7 +40,7 @@ def getFlickrImage(keyword, num = 1):
         resultStr = u"こめんなさい。:woman-facepalming:画像の取得に失敗しちゃいました。\n何度か試してみてください。:wink:"
     else:
         resultStr = u"こちらの画像で、いかがかしら:wink:" + res["photos"]["photo"][0][urlKind]
-    
-    pprint.pprint(resultStr)
+
+    print(resultStr)
 
     return resultStr
