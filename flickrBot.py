@@ -1,3 +1,4 @@
+#!/usr/local/pyenv/shims/python
 # coding:utf-8
 
 import flickrapi
