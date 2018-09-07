@@ -4,6 +4,9 @@
 import flickrapi
 import pprint
 import AppConf
+import io,sys
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+
 
 # 検索キーワード
 # keyword = "海岸"
@@ -43,10 +46,6 @@ def getFlickrImage(keyword, num = 1):
         resultStr = u"こめんなさい。:woman-facepalming:画像の取得に失敗しちゃいました。\n何度か試してみてください。:wink:"
     else:
         resultStr = "こちらの画像で、いかがかしら:wink:\n" + res["photos"]["photo"][0][urlKind]
-
-    import sys
-    print(sys.getdefaultencoding())
-    print(sys.stdout.encoding)
 
     print(resultStr)
 
