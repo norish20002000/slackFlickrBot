@@ -42,8 +42,8 @@ def getFlickrImage(keyword, num = 1):
     if not res["photos"]["photo"]:
         resultStr = u"こめんなさい。:woman-facepalming:画像の取得に失敗しちゃいました。\n何度か試してみてください。:wink:"
     else:
-        resultStr = u"こちらの画像で、いかがかしら:wink:\n" + res["photos"]["photo"][0][urlKind]
+        resultStr = "こちらの画像で、いかがかしら:wink:\n" + res["photos"]["photo"][0][urlKind]
 
-    # print(resultStr)
+    print(resultStr)
 
     return resultStr
