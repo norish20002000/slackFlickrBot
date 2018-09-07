@@ -1,3 +1,5 @@
+# coding:utf-8
+
 import flickrapi
 import pprint
 import AppConf
@@ -39,7 +41,7 @@ def getFlickrImage(keyword, num = 1):
     if not res["photos"]["photo"]:
         resultStr = u"こめんなさい。:woman-facepalming:画像の取得に失敗しちゃいました。\n何度か試してみてください。:wink:"
     else:
-        resultStr = u"こちらの画像で、いかがかしら:wink:" + res["photos"]["photo"][0][urlKind]
+        resultStr = u"こちらの画像で、いかがかしら:wink:\n" + res["photos"]["photo"][0][urlKind]
 
     print(resultStr)
 
