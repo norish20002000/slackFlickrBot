@@ -44,6 +44,6 @@ def getFlickrImage(keyword, num = 1):
     else:
         resultStr = u"こちらの画像で、いかがかしら:wink:\n" + res["photos"]["photo"][0][urlKind]
 
-    print(resultStr)
+    # print(resultStr)
 
     return resultStr
