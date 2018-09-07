@@ -14,6 +14,4 @@ def default_dunc(message):
 
     msg = flickrBot.getFlickrImage(keyword)
 
-    print(msg)
-
     message.reply(msg)
